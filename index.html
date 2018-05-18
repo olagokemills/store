@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html ng-app="ngApp">
+    <head>
+        <base href="http://localhost:9090/angularjs/store/">
+        <title>All Modules Store</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Vendor styles -->
+        <link rel="stylesheet" href="assets/vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css">
+        <link rel="stylesheet" href="assets/vendors/bower_components/animate.css/animate.min.css">
+        <link rel="stylesheet" href="assets/vendors/bower_components/jquery.scrollbar/jquery.scrollbar.css">
+        <!-- App styles -->
+        <link rel="stylesheet" href="assets/css/app.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <style type="text/css">
+            .collapse{
+                display: none;
+            }
+            .nav-second-level li{
+                border-bottom: 5px;
+                height: 35px;
+                margin-left: 10px;
+                display: block;
+            }
+        </style>
+    </head>
+
+    <body data-ma-theme="indigo" class="bg-light-dark">
+        <main class="main">
+            <div class="page-loader">
+                <div class="page-loader__spinner">
+                    <svg viewBox="25 25 50 50">
+                        <circle cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" />
+                    </svg>
+                </div>
+            </div>
+
+            <header class="header bg-indigo">
+                <div class="navigation-trigger visible-xs" data-ma-action="aside-open" data-ma-target=".sidebar">
+                    <div class="navigation-trigger__inner">
+                        <i class="navigation-trigger__line"></i>
+                        <i class="navigation-trigger__line"></i>
+                        <i class="navigation-trigger__line"></i>
+                    </div>
+                </div>
+                <div class="header__logo hidden-sm-down text-white">
+                    <h1 class="text-white bold fs-20">Booking System - <a class="fs-16 fw-100">Add Products</a></h1>
+                
+                </div><!--Removed A form-->
+                <ul class="top-nav">
+                    <li class="dropdown">
+                        <div class="user">
+                            <div class="user__info" data-toggle="dropdown">
+                                <img class="user__img" src="" alt="">
+                                <div>
+                                    <div class="user__name text-white">Malinda Hollaway</div>
+                                    <div class="user__email text-default">malinda-h@gmail.com</div>
+                                </div>
+                            </div>
+
+                            <div class="dropdown-menu m-t-40" style="position: relative; top: 40px;">
+                                <a class="dropdown-item" href="#">View Profile</a>
+                                <a class="dropdown-item" href="#">Settings</a>
+                                <a class="dropdown-item" href="#">Logout</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="hidden-xs-down">
+                        <a href="#" data-ma-action="aside-open" data-ma-target=".chat">
+                            <i class="zmdi zmdi-wrench"></i>
+                        </a>
+                    </li>
+                </ul>
+            </header>
+            <aside class="sidebar bg-white h-100">
+                <div class="scrollbar-inner">
+                 <ul class="navigation" id="side-menu">
+                       <li class="">
+                        <nav class="navbar navbar-light bg-light">
+                  <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                  </form></nav>
+                      </li>
+                        <hr />
+                        <li class=""><a href="{{baseurl}}"><i class="zmdi zmdi-home"></i> All</a></li>
+                        <hr />
+                        <li class=""><a href="{{baseurl}}/allproducts"><i class="zmdi zmdi-picture-in-picture"></i> Products</a>
+                           
+                        </li>
+                        <hr />
+                        <li class=""><a href="{{baseurl}}/allposts"><i class="zmdi zmdi-collection-text"></i> Posts</a>
+                            
+                        </li>
+                        <hr />
+                        <li class=""><a href="{{baseurl}}/allpaymentss"><i class="zmdi zmdi-car"></i> Payments</a>
+                        </li>
+                        <hr />
+                    </ul>
+                </div>
+            </aside>
+
+            <section  class="content" id="content">
+                <div class="bg-indigo hidden-sm-down" style="position: relative; height: 70px; width: 104.5%; left: -20px; top:-20px; padding-top: 10px">
+
+            <nav class="navbar navbar-expand-lg navbar-light hidden-sm-down">
+                   
+              <div class="container hidden-sm-down">
+                  <ul class="nav top-menu bg-indigo">
+                    <li class="nav-item"><a href="{{baseurl}}" class="nav-link text-black">All</a></li>
+                    <li class="nav-item"><a href="{{baseurl}}/allposts" class="nav-link text-black">Posts</a></li>
+                    <li class="nav-item"><a href="{{baseurl}}/allproducts" class="nav-link text-black">Products</a></li>
+                    <li class="nav-item"><a href="{{baseurl}}/allpayments" class="nav-link text-black">Payments</a></li>
+                </ul>
+              </div>
+            </nav>   
+          </div>
+              <div class="collapse navbar-collapse bg-dark" id="navbarTogglerDemo02">
+                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="{{baseurl}}">All <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="{{baseurl}}/allposts">Posts</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="{{baseurl}}/allproducts">Products</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="{{baseurl}}/allpayments">Cars</a>
+                      </li>
+                    </ul>
+                </div>
+
+                 <ui-view></ui-view>
+
+        <!-- angular libraries -->
+        <script src="libs/angular.js" type="text/javascript"></script>
+        <script src="libs/angular-ui-router.js" type="text/javascript"></script>
+        <script src="libs/angular-sanitize.js" type="text/javascript"></script>
+
+        <!-- app files -->
+        <script src="app/app.js"></script>
+        <script src="app/controllers/mainCtrl.js"></script>
+        <script src="app/controllers/postsCtrl.js"></script>
+
+        <script src="app/controllers/productsCtrl.js"></script>
+        <script src="app/controllers/carsCtrl.js"></script>
+        <script src="app/model/apiModel.js"></script>
+
+        <!-- Vendors -->
+        <script src="assets/vendors/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="assets/vendors/bower_components/tether/dist/js/tether.min.js"></script>
+        <script src="assets/vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="assets/vendors/bower_components/Waves/dist/waves.min.js"></script>
+        <script src="assets/vendors/bower_components/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+        <script src="assets/vendors/bower_components/jquery-scrollLock/jquery-scrollLock.min.js"></script>
+
+        <!-- Vendors: Data tables -->
+        <script src="assets/vendors/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+        <script src="assets/vendors/bower_components/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+        <script src="assets/vendors/bower_components/datatables.net-buttons/js/buttons.print.min.js"></script>
+        <script src="assets/vendors/bower_components/jszip/dist/jszip.min.js"></script>
+        <script src="assets/vendors/bower_components/datatables.net-buttons/js/buttons.html5.min.js"></script>
+
+        <!-- App functions and actions -->
+        <script src="assets/js/app.min.js"></script>
+          <!-- Metis Menu Plugin JavaScript -->
+    <script src="assets/js/metisMenu.js"></script>
+
+    <!-- MetisMenu CSS -->
+    <link href="assets/js/metisMenu.min.css" rel="stylesheet">
+
+
+    <!-- Custom Theme JavaScript -->
+     <script src="assets/js/sb-admin-2.js"></script>
+    </body>
+</html>

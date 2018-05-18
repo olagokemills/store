@@ -1,0 +1,63 @@
+<div class="col-md-12 ml-5 mt-4 no-padding">
+                 <h2 class="fw-100">Cars</h2>
+                 <h5 class="fw-100">Recommended for you</h5>
+                <div class="row mt-3" ng-repeat=" in cars.data">
+                   <div class="col-md-2  ml-3 no-padding">
+                         <div class="card p-2" style="width: 15rem">
+                  <img class="card-img-top img-hover" src="ss.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Free Conference</h5>
+                    <br />
+                    <p><a href="#" class="">Go somewhere</a></p>
+                  </div>
+                </div>
+            </div>
+            <!--
+            <div class="col-md-2  ml-3 no-padding">
+                <div class="card p-2" style="width: 15rem">
+                  <img class="card-img-top" src="ss1.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Pretty cool App</h5><br />
+                    <a href="#">Go somewhere</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-2 ml-3 no-padding">
+                <div class="card p-2" style="width: 15rem">
+                  <img class="card-img-top" src="ss2.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">A cool App</h5><br />
+                    <a href="#">Go somewhere</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-2 ml-3 no-padding">
+                <div class="card p-2" style="width: 15rem">
+                  <img class="card-img-top" src="ss3.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Some Other App</h5><br />
+                    <a href="#">Go somewhere</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-2 ml-3 no-padding">
+                <div class="card p-2" style="width: 15rem">
+                  <img class="card-img-top" src="ss4.png" alt="Card image cap">
+                  <div class="card-body">
+                        <h5 class="card-title">Some App</h5><br />
+                    <a href="#">Go somewhere</a>
+                  </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+
+    <button ng-click="cars.myCars()">Get Data</button>
+    <button ng-click="cars.createCar()">Create Dummy Data</button>
+<!--
+
+<p ng-repeat="x in cars.data">{{ x.id }}</p>
+
+<p ng-repeat="(index, x) in cars.data" ng-if="x.fname !== 'Kels'" ng-bind="x.fname">Hello favour</p>
+<p ng-repeat="(index, x) in cars.data" ng-if="x.fname == 'Kels'" ng-bind="x.fname+' Hello'"></p>-->

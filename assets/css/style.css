@@ -1,0 +1,295 @@
+.h-100
+{
+    height: 100vh !important;
+}
+.text-black
+{
+    color: #000 !important;
+}
+.text-default
+{
+    color: #999 !important;
+}
+ul.top-nav .user
+{
+    background-color: transparent !important;
+    position: relative; 
+    top: 10px; 
+    float: right;
+}
+.content
+{
+    margin-top: -20px !important;
+}
+.login
+{
+    margin-top: -30px !important;
+    margin-bottom: 30px !important;
+}
+.header
+{
+    height: 60px !important
+}
+#content
+{
+    position: relative !important;
+    top: 20px !important;
+}
+.manager-table
+{
+    position: relative !important;
+    top: -30px !important;
+}
+.td-condensed
+{
+    padding-bottom: 20px !important;
+    height: 43px !important; 
+    display: block;
+    overflow:hidden;
+    word-wrap:break-word;
+}
+.m-t-10
+{
+    margin-top: 10px !important;
+}
+.m-t-20
+{
+    margin-top: 20px !important;
+}
+.m-t-30
+{
+    margin-top: 30px !important;
+}
+.m-t-80
+{
+    margin-top: 80px !important;
+}
+.m-t-100
+{
+    margin-top: 100px !important;
+}
+.p-l-20
+{
+    padding-left: 20px !important;
+}
+.p-l-30
+{
+    padding-left: 30px !important;
+}
+.card-header.b-b
+{
+    border-bottom: 1px solid #eee;
+}
+.card-title
+{
+    margin-bottom: -5px !important;
+}
+.card-block
+{
+    margin-top: -20px !important;
+}
+.hidden
+{
+    display: none !important;
+}
+.btn-upload
+{
+    width: 200px !important;
+    margin: 150px auto 150px;
+}
+.featured-box
+{
+    width:100% !important;
+    height:200px !important;
+}
+.featured-box button
+{
+    margin: 90px 100px;
+    height: 30px;
+}
+.no-padding
+{
+    padding: 0px !important;
+}
+.no-margin
+{
+    margin: 0px !important;
+}
+.bg-gray
+{
+    background-color: #fafafa !important;
+}
+.text-gray
+{
+    color: #ddd;
+}
+.hint-text
+{
+    font-weight: 100 !important;
+}
+.padding-10
+{
+    padding: 10px !important;
+}
+.padding-15
+{
+    padding: 15px !important;
+}
+.padding-20
+{
+    padding: 20px !important;
+}
+.bold
+{
+    font-weight: 500 !important;
+}
+.fs-18
+{
+    font-size: 18px !important;
+}
+.fs-30
+{
+    font-size: 30px !important;
+}
+.fs-20
+{
+    font-size: 20px !important;
+}
+.fs-25
+{
+    font-size: 25px !important;
+}
+.fs-12
+{
+    font-size: 12px !important;
+}
+.fs-14
+{
+    font-size: 14px !important;
+}
+.fs-16
+{
+    font-size: 16px !important;
+}
+#line-chart
+{
+    position: relative;
+    height: 350px !important;
+}
+i.quick-stats-icon
+{
+    border-radius: 100px; 
+    padding: 13px 15px;
+}
+.m-b-15
+{
+    margin-bottom: 15px !important;
+}
+.m-r-15
+{
+    margin-right: 15px !important;
+}
+.m-r-25
+{
+    margin-right: 25px !important;
+}
+.m-l-10
+{
+    margin-left: 10px !important;
+}
+.m-l-15
+{
+    margin-left: 15px !important;
+}
+.m-l-20
+{
+    margin-left: 20px !important;
+}
+.p-t-20
+{
+    padding-top: 20px !important;
+}
+.text-default
+{
+    color: #999 !important;
+}
+.fw-100
+{
+    font-weight: 100 !important;
+}
+.content__title
+{
+    padding-left: 0px !important;
+}
+.content__title h1
+{
+    margin-bottom: -10px !important;
+}
+img.gallery-img
+{
+    height: 150px; 
+    width: 100%; 
+    border: 3px solid #eee; 
+    padding: 5px;
+}
+img.gallery-img:hover
+{
+    border:3px solid #069; 
+}
+.form-group label 
+{
+    margin-bottom: -20px !important;
+}
+span.help-block
+{
+    color: red;
+    display: hidden !important;
+    height: 0px;
+}
+
+.bg-gray-light
+{
+    background-color: #eee !important;
+}
+.p-l-10
+{
+    padding-left: 10px !important;
+}
+.p-l-70
+{
+    padding-left: 70px !important;
+}
+.sidebar
+{
+    box-shadow: 2px 0 10px rgba(0,0,0,.08);
+}
+.shadow-bottom
+{
+    box-shadow: 5px 0px 10px rgba(0,0,0,.08);
+}
+.b-l
+{
+    border-left: 1px dashed #333;
+}
+.top-menu
+{
+    justify-content:left !important;
+    padding-left: 20px !important;
+}
+
+body.login-content:before 
+{
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #607D8B;
+    content: "";
+    z-index: 0;
+  }
+.login
+{
+    margin-top: 0px !important;
+    overflow: hidden !important;
+}
