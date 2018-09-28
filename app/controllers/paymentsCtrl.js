@@ -2,32 +2,33 @@
 
   angular
     .module('app.controllers')
-    .controller('carsCtrl', carsCtrl);
+    .controller('paymentsCtrl', paymentsCtrl);
 
-function carsCtrl($scope, apiCall)
+function paymentsCtrl($scope, apiCall)
 {
-    var cars = this;
-    cars.createCar = createCars;
+    var payments = this;
+    
+    payments.createPayments = createPayments;
 
-     cars.myCars = getCars;
+     payments.myPayments = getPayments;
 
-     function getCars()
+     function getPayments()
     {
         apiCall
         .get(
-            'accounts', 
+            'payments', 
             function(response)
             {
-                cars.data = response.data.output.response;
+                payments.data = response.data.output.response;
             }
         );
     }
 
-    function createCars()
+    function createPayments()
     {
         apiCall
         .post(
-            'accounts',
+            'payments',
             {
                 fname: "Keluba",
             },

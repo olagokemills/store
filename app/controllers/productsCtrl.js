@@ -21,5 +21,19 @@ function productsCtrl($scope, apiCall)
             }
         );
     }
+
+     payments.myPayments = getPayments;
+
+     function getPayments()
+    {
+        apiCall
+        .get(
+            'payments', 
+            function(response)
+            {
+                payments.data = response.data.output.response;
+            }
+        );
+    }
     
 }

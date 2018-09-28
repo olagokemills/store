@@ -46,11 +46,11 @@ function configuration($stateProvider, $urlRouterProvider, $locationProvider)
             templateUrl: 'app/view/allproducts.html',
             controller: 'productsCtrl',
             controllerAs: 'products'
-        }
+        })
         .state({
             name: 'Error',
             url: '/404',
-            templateUrl: 'app/view/404.html',
+            templateUrl: 'app/view/404.html'
         });
         
     $locationProvider.html5Mode({
